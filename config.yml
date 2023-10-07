@@ -1,0 +1,78 @@
+production:
+  password: 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
+  theme_id: 142423359762
+  store: the-art-republic.myshopify.com
+  ignore_files:
+    - config/settings_data.json
+    - templates/*json
+development:
+  password: shptka_39a2e18fe056f563ac20d92ade45156a
+  theme_id: 156773613842
+  store: the-art-republic.myshopify.com
+  ignore_files: 
+    - config/settings_data.json 
+    - templates/*json
+
+
+
+#156773613842 - theme/wcv-mobile-issues
+#156669444370 - theme/sitemap-overhaul
+#156549513490 - theme/variant-metafield-issue
+
+
+
+# 24 to 28
+
+#155843166482 - theme/boost-recommendations
+#155574042898 - theme/variant-framing-module
+#155277099282 - theme/ownart-checkout (klarna variant)
+#155151597842 - theme/ux-niggles
+#155144323346 - theme/special-chars-in-boost-search
+#154012582162 - theme/video-on-pdp
+#154791805202 - theme/marketplace-issue
+#154612039954 - theme/content-shift-in-cart
+#154712211730 - theme/incorrect-hover-image
+
+# 3 to 7
+
+
+#152255332626 - theme/ar-for-ar
+#153401622802 - theme/variant-product-structure
+
+#153572180242 - theme/white-frame-shadows
+#153383371026 - theme/post-live
+#126453448749 - pre-release
+#153301385490 - theme/head-html-elements
+
+
+## 26 to 30
+
+#152929108242 - theme/pdp-youtube
+#152822284562 - theme/framing-matrix
+
+## 19 to 23
+
+
+#152266440978 - theme/pricing-issue
+
+## 12 to 16
+
+#152173740306 - theme/bug-fix
+#151816077586 - theme/in-room-view-overlap
+#151968809234 - theme/framing-module-drop-shadow
+#149372076306 - theme/variant-product-structure
+#151633887506 - theme/responses-sitemap
+#151636115730 - theme/media-handling
+#151652368658 - theme/cart-page-artwork-preview
+
+## ACTIVE
+
+#151425155346 - theme/pdp-info-architecture
+#150726574354 - theme/framing-marketplace-products
+#150640689426 - theme/marketing-tiles-position
+#150062891282 - theme/finished-frame-artwork-size
+#149854486802 - theme/theme-changes-for-issues
+#149648343314 - theme/second-image-hover
+#149709226258 - theme/strikethrough-price
+#149787476242 - theme/scrolling-blog-posts
+#149381185810 - theme/zoomable-images
