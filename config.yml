@@ -1,17 +1,41 @@
 production:
   password: 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
   theme_id: 142423359762
-  store: the-art-republic.myshopify.com
+  store: watbro.myshopify.com
   ignore_files:
     - config/settings_data.json
     - templates/*json
 development:
-  password: shptka_39a2e18fe056f563ac20d92ade45156a
-  theme_id: 156773613842
-  store: the-art-republic.myshopify.com
+  password: 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
+  theme_id: 132660756634
+  store: watbro.myshopify.com
   ignore_files: 
     - config/settings_data.json 
     - templates/*json
+
+
+
+
+
+
+
+#132660756634 - paw/master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

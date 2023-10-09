@@ -17,6 +17,12 @@
   width: 100%;
 }
 
+.heading-large {
+  font-size: 21.875rem;
+  font-family: "Anton", sans-serif !important;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;
@@ -29,15 +35,11 @@
   .rich-text__wrapper--right {
     justify-content: flex-end;
   }
-
-  .rich-text__blocks {
-    max-width: 50rem;
-  }
 }
 
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
-    max-width: 78rem;
+    max-width: 100%;
   }
 }
 
