@@ -1,0 +1,108 @@
+<section class="page-width">
+   {% if section.settings.title != blank %}
+    <h2>
+      {{ section.settings.title }}
+    </h2>
+    {% endif %}
+
+    {%- capture sizes -%}
+      {% if section.blocks.size == 1 -%}(min-width: {{ settings.page_width }}px) calc({{ settings.page_width }}px - 100px){% else %}(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+      {% if section.blocks.size == 1 -%}(min-width: 750px) calc(100vw - 100px){% else %}(min-width: 750px) calc((100vw - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+      {% if section.blocks.size == 2 and section.settings.mobile_layout == 'collage' -%}calc((100vw - 30px) / 2){% else %}calc(100vw - 30px){% endif %}
+    {%- endcapture -%}
+
+    <div class="product-grid-outer">
+      {%- for block in section.blocks -%}
+      <div
+      {% if settings.animations_reveal_on_scroll %}
+        data-cascade
+        style="--animation-order: {{ forloop.index }};"
+      {% endif %}
+      class="scroll-trigger animate--slide-in"
+      >
+        <a href="{{ block.settings.product.url }}">
+          {{
+              block.settings.image
+              | image_url: width: 3200
+              | image_tag:
+              loading: 'lazy',
+              sizes: sizes,
+              widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+          }}
+          <h3>{{ block.settings.product.title }}</h3>
+          <p>{{ block.settings.product.price | money_without_trailing_zeros }}</p>
+        </a>
+      </div>
+      {%- endfor -%}
+   </div>
+</section>
+
+<style>
+  .product-grid-outer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    min-height: 570px;
+    object-fit: cover;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.multicolumn-products.name",
+  "class": "section",
+  "max_blocks": 2,
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Multicolumn",
+      "label": "Enter the section title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Choose your image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Choose the product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.multicolumn-products.presets.name",
+      "blocks": [
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
