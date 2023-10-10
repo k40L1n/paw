@@ -20,7 +20,7 @@
       {% endif %}
       class="scroll-trigger animate--slide-in"
       >
-        <a href="{{ block.settings.product.url }}">
+        <a href="{{ block.settings.product.url }}" class="multicolumn-products--link">
           {{
               block.settings.image
               | image_url: width: 3200
@@ -51,7 +51,7 @@
     display: block;
     height: 100%;
   }
-  img{
+  .multicolumn-products--link img{
     width: 100%;
     height: auto;
     min-height: 570px;

@@ -2395,7 +2395,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background-color:#000000 !important;
+  color: #ffffff;
 }
 
 .header-wrapper--border-bottom {
@@ -2437,7 +2438,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns:  repeat(3,1fr);
     column-gap: 2rem;
   }
 
@@ -2501,11 +2502,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__heading-link .h2 {
   line-height: 1;
   color: rgba(var(--color-foreground), 0.75);
-}
-
-.header__heading-logo {
-  height: auto;
-  max-width: 100%;
 }
 
 .header__heading-logo-wrapper {
@@ -2828,7 +2824,7 @@ details[open] > .header__submenu {
   }
 
   .header--middle-left .header__inline-menu {
-    margin-left: 0;
+    text-align: center;
   }
 }
 
@@ -2840,6 +2836,8 @@ details[open] > .header__submenu {
   padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header__menu-item:hover {
