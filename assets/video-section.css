@@ -1,7 +1,22 @@
+.video-section {
+  border-radius: 20px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 100px;
+}
+
+.video-section iframe {
+  border-radius: 20px;
+  /* border: 3px solid #000000; */
+}
+
 .video-section__media {
   --ratio-percent: 56.25%;
   position: relative;
   padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
@@ -41,6 +56,11 @@
 
 .video-section__media video {
   background: #000000;
+  border-radius: 17px;
+}
+
+.video-section__poster img{
+  border-radius: 17px;
 }
 
 .video-section__media.media-fit-cover video {

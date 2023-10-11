@@ -2562,7 +2562,7 @@
           },
           "options__2": {
             "label": "Half width of column"
-          },
+          },  
           "options__3": {
             "label": "Full width of column"
           }
@@ -2649,6 +2649,14 @@
       },
       "presets": {
         "name": "Multicolumn Products"
+      }
+    },
+    "mission":{
+      "name": "Mission",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        }
       }
     },
     "newsletter": {

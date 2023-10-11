@@ -1,0 +1,37 @@
+<div>mission</div>
+
+<style>
+
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.mission.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter the heading",
+      "id": "heading",
+      "default": "WAP'S MISSION"
+    },
+    {
+      "type": "text",
+      "label": "Enter the sub heading",
+      "id": "sub-heading",
+      "default": "lorem ipsum"
+    },
+    {
+      "type": "image_picker",
+      "label": "Select your image",
+      "id": "image"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "t:sections.mission.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -70,6 +71,21 @@
   --shadow-opacity: var(--media-shadow-opacity);
   --shadow-visible: var(--media-shadow-visible);
 }
+
+
+/* @font-face {
+  font-family: 'Anton-Regular';
+  src: url('/assets/Anton-Regular.woff2') format('woff2'),
+       url('/assets/Anton-Regular.woff') format('woff');
+} */
+
+/* @font-face {
+  font-family: "Anton-Regular";
+  src: url("{{ 'Anton-Regular' | asset_url }}") format("woff2");
+} */
+
+
+
 
 /* base */
 

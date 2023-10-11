@@ -18,8 +18,9 @@
 }
 
 .heading-large {
-  font-size: 30rem;
-  font-weight: 900;
+  font-size: 18vw;
+  font-family: 'Anton', sans-serif;
+  color: #DA1313;
 }
 
 @media screen and (min-width: 750px) {
