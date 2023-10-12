@@ -2659,6 +2659,14 @@
         }
       }
     },
+      "section-mission":{
+      "name": "Section Mission",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        }
+      }
+    },
     "newsletter": {
       "name": "Email signup",
       "settings": {
