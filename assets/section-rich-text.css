@@ -2,6 +2,22 @@
   z-index: 1;
 }
 
+.heading-rich-text h1{
+  margin: 0;
+}
+
+.heading-rich-text[data-attr='8'] h1::after{
+  content: '';
+  background-image: url('https://cdn.shopify.com/s/files/1/0612/8097/7050/files/of_wildness.png?v=1697129117');
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 20px;
+  right: 23%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
