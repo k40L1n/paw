@@ -58,6 +58,10 @@ quantity-popover quick-order-list-remove-button .button {
   padding-left: 1rem;
 }
 
+.cart-item__totals {
+  min-height: calc((var(--inputs-border-width) * 3) + 2rem);
+}
+
 @media screen and (max-width: 989px) {
   .quantity-popover__info.global-settings-popup {
     left: 0;
