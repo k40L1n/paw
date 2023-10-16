@@ -28,9 +28,13 @@
   transition: transform var(--duration-default) ease;
 }
 
+.cart-drawer__empty-content {
+  height: 100%;
+  position: relative;
+}
+
 .drawer__inner-empty {
   height: 100%;
-  padding: 0 1.5rem;
   background-color: rgb(var(--color-background));
   overflow: hidden;
   display: flex;
@@ -100,6 +104,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 
 .cart-drawer__warnings .drawer__close {
+  position: absolute;
+  top: 5px;
   right: 5px;
 }
 
