@@ -2592,8 +2592,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
 }
 
-.header__icon {
-  color: rgb(var(--color-foreground));
+.header__icon { 
+  color: #FFFFFF;
 }
 
 .header__icon span {
@@ -2626,6 +2626,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+}
+
+#cart-icon-bubble {
+  width: 100px;
 }
 
 .header__icon--menu[aria-expanded="true"]::before {
@@ -2861,7 +2865,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: #FFFFFF;
 }
 
 .header__menu-item span {
