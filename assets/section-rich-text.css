@@ -18,6 +18,18 @@
   background-size: contain;
 }
 
+.heading-rich-text[data-attr='10'] h1::after{
+  content: '';
+  background-image: url('https://cdn.shopify.com/s/files/1/0612/8097/7050/files/Cruelty-Free_Chic.png?v=1697513917');
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: -26px;
+  right: 17%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
