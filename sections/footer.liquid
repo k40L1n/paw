@@ -1,38 +1,44 @@
-<footer>
+<footer
+   data-cascade
+   style="--animation-order: 1;"
+   class="scroll-trigger animate--slide-in"
+   >
   <h2 class="footer-title">WEAR A PAW</h2>
-  <div class="footer-info">
-    <div class="footer-mission"> 
-     <p>Wear a paw is not just a clothing brand but a step towards speaking for the voiceless. Globally we are exploiting animals for fashion, food and entertainment. When you wear a paw you speak for a cause in each outfit as each print speaks for the animals and a cause. </p>
+  <div class="px-40 px-md-100">
+    <div class="footer-info">
+      <div class="footer-mission"> 
+      <p>Wear a paw is not just a clothing brand but a step towards speaking for the voiceless. Globally we are exploiting animals for fashion, food and entertainment. When you wear a paw you speak for a cause in each outfit as each print speaks for the animals and a cause. </p>
+      </div>
+      <div class="footer-links footer-links-first">
+        <h3>Shop</h3>
+        {% for link in section.settings.menu1.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <div class="footer-links footer-links-second">
+        <h3>Legal</h3>
+        {% for link in section.settings.menu2.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <div class="footer-links footer-links-third">
+        <h3>Help & Contact</h3>
+        {% for link in section.settings.menu3.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
     </div>
-    <div class="footer-links">
-      <h3>Shop</h3>
-      {% for link in section.settings.menu1.links %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-      {% endfor %}
-    </div>
-    <div class="footer-links">
-      <h3>Legal</h3>
-      {% for link in section.settings.menu2.links %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-      {% endfor %}
-    </div>
-    <div class="footer-links">
-      <h3>Help & Contact</h3>
-      {% for link in section.settings.menu3.links %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="footer-desc">
-    <div class="footer-desc-social">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="footer-desc-studio">
-      <span>designed by</span>
-      <span>Lolo Pipa Design Studio</span>
+    <div class="footer-desc">
+      <div class="footer-desc-social">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="footer-desc-studio">
+        <span>designed by</span>
+        <span>Lolo Pipa Design Studio</span>
+      </div>
     </div>
   </div>
 </footer>
@@ -40,7 +46,6 @@
 <style>
   footer{
     background-color: #DA1313;
-    padding: 0 100px;
   }
   .footer-title {
     text-align: center;
@@ -51,13 +56,14 @@
   }
   .footer-info{  
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
   }
   .footer-mission{
-    max-width: 560px;
-    display: flex;
     color: #FDFDF3;
     justify-self: flex-start;
+    padding-right: 40px;
+    grid-area: 1 / 1 / 1 /7;
   }
   .footer-links a{
     display: block;
@@ -67,13 +73,24 @@
    text-decoration: underline;
    color: #FDFDF3;
   }
+  .footer-links-first {
+    grid-area:  2 / 1 / 2 / 3;
+  }
+  .footer-links-second {
+    grid-area:  2 / 3 / 2 / 5;
+  }
+  .footer-links-third {
+    grid-area:  2 / 5 / 2 / 7;
+  }
   .footer-desc{
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    padding: 100px 0 50px 0;
+    grid-template-columns: 2fr 1fr;
+    padding: 40px 0;
+    grid-gap: 20px;
   }
   .footer-desc-social {
     display: flex;
+    align-items: center;
   }
   .footer-desc-social span{
     display: block;
@@ -83,9 +100,32 @@
     background-color: #FDFDF3;
     margin: 0 10px;
   }
+  .footer-desc-studio {
+    text-align: center;
+  }
   .footer-desc-studio span{
     color: #FDFDF3;
     display: block;
+  }
+
+  @media screen and (min-width: 750px) {
+    .footer-info{  
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      text-align: left;
+    }
+    .footer-desc{
+      grid-template-columns: 5fr 1fr;
+    }
+    .footer-desc-studio {
+      text-align: left;
+    }
+     .footer-mission, 
+     .footer-links-first, 
+     .footer-links-second, 
+     .footer-links-third {
+      grid-area: unset;
+     }
   }
 </style>
 
