@@ -4,4 +4,9 @@
 
 .related-products__heading {
   margin: 0 0 3rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.related-products__heading strong {
+  font-weight: 500;
 }

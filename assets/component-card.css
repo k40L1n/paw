@@ -161,10 +161,10 @@
 }
 
 @media screen and (min-width: 750px) {
-  .card__information {
+  /* .card__information {
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
-  }
+  } */
 }
 
 .card__badge {
@@ -321,10 +321,10 @@
   padding: 0;
 }
 
-.card--standard > .card__content .card__information {
+/* .card--standard > .card__content .card__information {
   padding-left: 0;
   padding-right: 0;
-}
+} */
 
 .card--card.card--media .card__inner .card__information,
 .card--card.card--text .card__inner,
@@ -384,9 +384,9 @@
   margin-top: 0.4rem;
 }
 
-.card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
+/* .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
   margin-top: 0.7rem;
-}
+} */
 
 .card-information .caption {
   letter-spacing: 0.07rem;

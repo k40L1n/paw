@@ -1,4 +1,4 @@
-<section class="page-width">
+<section class="px-40 px-md-100">
    {% if section.settings.title != blank %}
     <h2>
       {{ section.settings.title }}
@@ -29,8 +29,8 @@
               sizes: sizes,
               widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
           }}
-          <h3>{{ block.settings.product.title }}</h3>
-          <p>{{ block.settings.product.price | money_without_trailing_zeros }}</p>
+          <h3 class="m-0">{{ block.settings.product.title }}</h3>
+          <p class="m-0">{{ block.settings.product.price | money_without_trailing_zeros }}</p>
         </a>
       </div>
       {%- endfor -%}
@@ -42,14 +42,16 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 40px;
-    margin: 0 auto;
-    padding: 0 20px;
   }
    .product-grid-outer a{
     text-decoration: none;
     display: block;
     height: 100%;
   }
+  .multicolumn-products--link {
+    color: #000000;
+  }
+
   .multicolumn-products--link img{
     width: 100%;
     height: auto;

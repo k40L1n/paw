@@ -121,6 +121,18 @@
         </aside>
       {%- endif -%}
 
+
+
+      {% if collection.url contains '/collections/all' %}
+        <div class="custom-filters">
+            <a href="/collections/all">All</a>
+            <a href="/collections/zebra">zebra</a>
+            <a href="/collections/lion">lion</a>
+            <a href="/collections/cow">cow</a>
+            <a href="/collections/leopard">leopard</a>
+        </div>
+      {% endif %}
+  
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
@@ -217,6 +229,31 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+
+  .custom-filters{
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+  }
+
+  .custom-filters a{
+    margin: 0 auto;
+    color: #000000;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+
+  .custom-filters a:hover{
+    background-color: #000000;
+    color: #fdfdf3;
+  }
+
+  @media screen and (min-width: 750px) {
+    .custom-filters a{
+      margin: 0 20px;
+    }
   }
 </style>
 

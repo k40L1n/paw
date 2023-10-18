@@ -1,4 +1,4 @@
-<div class="section-mission">
+<div class="section-mission px-40 px-md-100">
    <div class="section-mission--mission">
         <div class="section-mission--info">
         <h2>Wap's mission</h2>
@@ -25,13 +25,8 @@
 
 
 <style>
-.section-mission {
-    padding: 100px 100px 0 100px;
-}
-.section-mission--mission{
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-gap: 100px;
+.section-mission{
+    padding-top: 40px;
 }
 .section-mission--subtitle {
     display: flex;
@@ -51,14 +46,26 @@
 .section-mission--subtitle p{ 
     text-transform: uppercase;
 }
-.section-mission--info p{
-    justify-self: flex-end;
-    margin-left: auto;
-    width: 560px;
-}
 .section-mission--image img{
     height: auto;
     width: 100%;
+}
+
+.section-mission--subtitle p:last-child{
+  text-align: right;
+}
+
+@media screen and (min-width: 750px) {
+  .section-mission--mission{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 100px;
+  }
+  .section-mission--info p{
+    justify-self: flex-end;
+    margin-left: auto;
+    width: 560px;
+  }
 }
 </style>
 

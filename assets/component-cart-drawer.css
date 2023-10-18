@@ -84,9 +84,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .drawer__heading {
   margin: 0 0 1rem;
   font-size: 5rem;
-  font-family: 'Anton', sans-serif;
-  color: #DA1313;
-  text-transform: uppercase;
 }
 
 .drawer__close {

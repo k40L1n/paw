@@ -1,8 +1,13 @@
 .quick-add {
-  position: relative;
-  grid-row-start: 4;
-  margin: 0 0 1rem;
-  z-index: 1;
+    position: relative  ;
+    margin: -7rem auto 0 auto;
+    z-index: 1;
+    width: 90%;
+    display:none;
+}
+
+.card:hover .quick-add {
+  display: block;;
 }
 
 .card--card .quick-add {

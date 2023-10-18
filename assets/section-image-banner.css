@@ -2,10 +2,29 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  margin: 0 40px;
 }
 
 .banner__box {
   text-align: center;
+}
+
+.banner__media[data-attr='3'] {
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+.banner__media[data-attr='3'] img {
+  display: block !important;
+  max-width: 100% !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) !important;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
@@ -24,6 +43,14 @@
 }
 
 @media only screen and (min-width: 750px) {
+  .banner {
+    margin: 0 100px;
+  }
+  
+  .banner__media[data-attr='3'] img {
+    max-width: 50% !important;
+  }
+
   .banner--content-align-right .banner__box {
     text-align: right;
   }

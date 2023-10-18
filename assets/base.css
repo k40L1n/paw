@@ -73,22 +73,51 @@
 }
 
 
-/* @font-face {
-  font-family: 'Anton-Regular';
-  src: url('/assets/Anton-Regular.woff2') format('woff2'),
-       url('/assets/Anton-Regular.woff') format('woff');
-} */
-
-/* @font-face {
-  font-family: "Anton-Regular";
-  src: url("{{ 'Anton-Regular' | asset_url }}") format("woff2");
-} */
-
-
-
 .d-none {
   display: none !important;
 }
+.m-0{
+  margin: 0;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+}
+
+.color-primary{
+  color: #DA1313;
+}
+
+.color-secondary{
+  color: #fdfdf3;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.px-40{
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+@media screen and (min-width: 750px) {
+  .px-md-100{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* base */
 
@@ -1869,6 +1898,8 @@ input[type="checkbox"] {
 .form__label {
   display: block;
   margin-bottom: 0.6rem;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 .form__message {
@@ -2891,7 +2922,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  color: #fdfdf3;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
