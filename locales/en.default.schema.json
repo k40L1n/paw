@@ -2562,7 +2562,7 @@
           },
           "options__2": {
             "label": "Half width of column"
-          },  
+          },
           "options__3": {
             "label": "Full width of column"
           }
@@ -2651,7 +2651,11 @@
         "name": "Multicolumn Products"
       }
     },
-    "mission":{
+    "floating-image": {
+      "name": "Floating Image",
+      "settings": {}
+    },
+    "mission": {
       "name": "Mission",
       "settings": {
         "title": {
@@ -2659,7 +2663,7 @@
         }
       }
     },
-      "section-mission":{
+    "section-mission": {
       "name": "Section Mission",
       "settings": {
         "title": {

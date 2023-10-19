@@ -1,0 +1,45 @@
+<section class="px-40 px-md-100">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <p>
+        {% if section.settings.content != blank %}
+            {{ section.settings.content }}
+        {% endif %}
+    </p>
+</section>
+
+
+<style>
+
+</style>
+
+{% schema %}
+{
+    "name": "Floating image",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Choose your image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Choose your image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Choose your image"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "The content"
+        }
+    ]
+}
+{% endschema %}
