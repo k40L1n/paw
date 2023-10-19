@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -72,52 +72,41 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
-
 .d-none {
   display: none !important;
 }
-.m-0{
+.m-0 {
   margin: 0 !important;
 }
 
 .font-anton {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   text-transform: uppercase;
 }
 
-.color-primary{
-  color: #DA1313;
+.color-primary {
+  color: #da1313;
 }
 
-.color-secondary{
+.color-secondary {
   color: #fdfdf3;
 }
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
-.px-40{
+.px-40 {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
 
 @media screen and (min-width: 750px) {
-  .px-md-100{
+  .px-md-100 {
     padding-left: 100px !important;
     padding-right: 100px !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* base */
 
@@ -1355,6 +1344,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
+  --border-opacity: 0;
 }
 
 .button:focus-visible,
@@ -2445,7 +2435,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color:#000000 !important;
+  background-color: #000000 !important;
   color: #ffffff;
 }
 
@@ -2489,7 +2479,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    grid-template-columns:  repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
 
@@ -2623,12 +2613,21 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
 }
 
-.header__icon { 
-  color: #FFFFFF;
+.header__icon {
+  color: #ffffff;
 }
 
 .header__icon span {
   height: 100%;
+}
+
+.header__icon--account + span {
+  align-items: center;
+  width: 2.5rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 2.5rem;
+  justify-content: center;
 }
 
 .header__icon::after {
@@ -2896,7 +2895,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header__menu-item span {
