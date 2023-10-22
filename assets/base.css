@@ -83,6 +83,7 @@
 .font-anton {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
+  letter-spacing: -2px;
 }
 
 .color-primary {
@@ -97,15 +98,15 @@
   text-transform: uppercase;
 }
 
-.px-40 {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 @media screen and (min-width: 750px) {
-  .px-md-100 {
-    padding-left: 100px !important;
-    padding-right: 100px !important;
+  .px-md-40 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
   .d-md-block {
     display: block !important;
