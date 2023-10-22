@@ -7,14 +7,7 @@
         </p>
         </div>
         <div class="section-mission--image">
-            {{
-            section.settings.image
-            | image_url: width: 3200
-            | image_tag:
-            loading: 'lazy',
-            sizes: sizes,
-            widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
-        }}
+            {{ section.settings.image | image_url: width: 3200 | image_tag: loading: 'lazy', sizes: sizes, widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200' }}
         </div>
    </div>
     <div class="section-mission--subtitle">

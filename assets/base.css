@@ -75,6 +75,7 @@
 .d-none {
   display: none !important;
 }
+
 .m-0 {
   margin: 0 !important;
 }
@@ -105,6 +106,9 @@
   .px-md-100 {
     padding-left: 100px !important;
     padding-right: 100px !important;
+  }
+  .d-md-block {
+    display: block !important;
   }
 }
 
