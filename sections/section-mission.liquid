@@ -7,7 +7,13 @@
         </p>
         </div>
         <div class="section-mission--image">
-            {{ section.settings.image | image_url: width: 3200 | image_tag: loading: 'lazy', sizes: sizes, widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200' }}
+          {% if section.settings.url != blank %}
+           <a href="{{ section.settings.url }}">
+          {% endif %}
+             {{ section.settings.image | image_url: width: 3200 | image_tag: loading: 'lazy', sizes: sizes, widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200' }}
+          {% if section.settings.url != blank %}
+              </a>
+          {% endif %}
         </div>
    </div>
     <div class="section-mission--subtitle">
@@ -52,7 +58,7 @@
 @media screen and (min-width: 750px) {
   .section-mission--mission{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 3fr 2fr;
     grid-gap: 100px;
   }
   .section-mission--info p{
@@ -87,6 +93,11 @@
       "type": "image_picker",
       "label": "Select your image",
       "id": "image"
+    },
+    {
+      "type": "url",
+      "label": "Enter the URL",
+      "id": "url"
     }
   ],
   "blocks": [],
