@@ -81,9 +81,9 @@
 }
 
 .font-anton {
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+  font-family: "Anton", sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: -2px !important;
 }
 
 .color-primary {
@@ -696,9 +696,9 @@ summary {
 
 summary .icon-caret {
   position: absolute;
-  height: 0.6rem;
+  height: 1rem;
   right: 1.5rem;
-  top: calc(50% - 0.2rem);
+  transform: translateY(50%);
 }
 
 summary::-webkit-details-marker {

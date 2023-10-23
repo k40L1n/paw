@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="section-{{ section.id }}-padding px-20 px-md-40"
+  class="section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -13,20 +13,6 @@
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
-
-  {%- style -%}
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    }
-
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
-  {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -174,7 +160,7 @@
               </p>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden m-0" {{ block.shopify_attributes }}>
+                <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
               {%- endif -%}
@@ -551,6 +537,24 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+
+        <div class="product-contact-info">
+          <p class="product-contact-info--title"> Contact Us</p>
+            <div class="product-contact-info--points">
+              <div>
+                <span></span><p class="m-0">Flexible payments available</p>
+              </div>
+              <div>
+                <span></span><p class="m-0">Free returns within 15 days</p>
+              </div>
+              <div>
+                <span></span><p class="m-0">Our signature gift wrapping with a personalized card</p>
+              </div>
+              <div>
+                <span></span><p class="m-0">Our packaging is made with lots and lots of love and sweetness for you</p>
+              </div>
+            </div>
+        </div>
       </product-info>
     </div>
     {%- if section.settings.media_position == 'right' -%}
