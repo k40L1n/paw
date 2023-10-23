@@ -2,20 +2,20 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  margin: 0 40px;
+  margin: 0 2rem;
 }
 
 .banner__box {
   text-align: center;
 }
 
-.banner__media[data-attr='3'] {
+.banner__media[data-attr="3"] {
   margin: 0 auto;
   background-color: transparent;
   padding: 50px 0;
 }
 
-.banner__media[data-attr='3'] img {
+.banner__media[data-attr="3"] img {
   display: block !important;
   max-width: 100% !important;
   position: absolute !important;
@@ -44,10 +44,10 @@
 
 @media only screen and (min-width: 750px) {
   .banner {
-    margin: 0 100px;
+    margin: 0 4rem;
   }
-  
-  .banner__media[data-attr='3'] img {
+
+  .banner__media[data-attr="3"] img {
     max-width: 50% !important;
   }
 

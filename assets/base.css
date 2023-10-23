@@ -136,7 +136,7 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -161,7 +161,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
 
   .header.page-width,
@@ -1348,8 +1348,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button--secondary:after {
-  --border-opacity: var(--buttons-border-opacity);
-  --border-opacity: 0;
+  border-radius: 1rem;
 }
 
 .button:focus-visible,
@@ -3639,6 +3638,9 @@ details-disclosure > details {
         rgba(var(--color-button), var(--alpha-button-background));
   }
 
+  .button:not([disabled]):hover:after {
+    --border-offset: 0;
+  }
   .animate--hover-vertical-lift
     .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */

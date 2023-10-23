@@ -1,13 +1,13 @@
 .quick-add {
-    position: relative  ;
-    margin: -7rem auto 0 auto;
-    z-index: 1;
-    width: 90%;
-    display:none;
+  position: relative;
+  margin: -7rem auto 0 auto;
+  z-index: 1;
+  width: 90%;
+  display: none;
 }
 
 .card:hover .quick-add {
-  display: block;;
+  display: block;
 }
 
 .card--card .quick-add {
@@ -180,7 +180,9 @@ quick-add-modal .product__column-sticky {
     width: calc(54% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
-  quick-add-modal .product--columns .product__media-item:not(.product__media-item--single):not(:only-child) {
+  quick-add-modal
+    .product--columns
+    .product__media-item:not(.product__media-item--single):not(:only-child) {
     max-width: 100%;
     width: 100%;
   }
@@ -218,10 +220,17 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #000000;
 }
 
 quick-add-modal .product-media-container.constrain-height {
-  --viewport-offset: calc((var(--modal-height-offset) + var(--modal-padding) + var(--popup-border-width)) * 2);
+  --viewport-offset: calc(
+    (
+        var(--modal-height-offset) + var(--modal-padding) +
+          var(--popup-border-width)
+      ) * 2
+  );
 }
 
 @media screen and (min-width: 750px) {

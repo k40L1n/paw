@@ -13,8 +13,9 @@
   --ratio-percent: 56.25%;
   position: relative;
   padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
@@ -27,7 +28,8 @@
 }
 
 .video-section__media.deferred-media {
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
@@ -54,4 +56,5 @@
 
 .video-section__media.media-fit-cover video {
   object-fit: cover;
+  border-radius: 19px;
 }
