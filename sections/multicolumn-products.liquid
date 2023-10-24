@@ -40,14 +40,28 @@
 <style>
   .product-grid-outer{
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 8rem;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    padding: 10rem 0;
   }
    .product-grid-outer a{
     text-decoration: none;
     display: block;
     height: 100%;
   }
+
+  .product-grid-outer h3{
+    line-height: 1; 
+  }
+
+  .product-grid-outer p{
+    line-height: 1.4;
+  }
+
+  .product-grid-outer div:hover h3{
+    text-decoration: underline;
+  }
+
   .multicolumn-products--link {
     color: #000000;
   }
@@ -59,6 +73,15 @@
     object-fit: cover;
     border-radius: 2rem;
     border: 1px solid #000000;
+  }
+
+  @media screen and (min-width: 750px) {
+    .product-grid-outer{
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-gap: 8rem;
+      padding: 10rem 0;
+    }
   }
 </style>
 

@@ -199,6 +199,8 @@
   left: 0;
   top: 0;
   width: 100%;
+  border-radius: 2rem;
+  border: 1px solid #000000;
 }
 
 .banner__media-half {

@@ -83,17 +83,17 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__heading {
   margin: 0 0 1rem;
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 .drawer__close {
-    display: block;
-    min-width: 4.4rem;
-    min-height: 4.4rem;
-    color: #da1313;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  display: block;
+  min-width: 4.4rem;
+  min-height: 4.4rem;
+  color: #da1313;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .cart-drawer {
@@ -214,7 +214,6 @@ cart-drawer-items {
 .cart-drawer .cart-item {
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
-  gap: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -335,6 +334,7 @@ cart-drawer-items {
 
 .cart-drawer .cart__checkout-button {
   max-width: none;
+  text-transform: uppercase;
 }
 
 .drawer__footer .cart__dynamic-checkout-buttons {
@@ -369,9 +369,17 @@ cart-drawer-items {
   }
 
   .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2) ~ li,
+  .drawer__footer
+    #dynamic-checkout-cart
+    ul
+    > li:first-child:nth-last-child(2)
+    ~ li,
   .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4) ~ li {
+  .drawer__footer
+    #dynamic-checkout-cart
+    ul
+    > li:first-child:nth-last-child(4)
+    ~ li {
     flex-basis: calc(50% - 0.5rem) !important;
   }
 }

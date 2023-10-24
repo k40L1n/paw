@@ -67,7 +67,7 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1">
+  <h1 id="login" tabindex="-1" class="font-anton m-0">
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
@@ -132,18 +132,22 @@
           </label>
         </div>
 
-        <a href="#recover">
-          {{ 'customer.login_page.forgot_password' | t }}
-        </a>
+        
       {%- endif -%}
 
       <button>
         {{ 'customer.login_page.sign_in' | t }}
       </button>
-
-      <a href="{{ routes.account_register_url }}">
+        
+      <a href="{{ routes.account_register_url }}" class="login-links">
         {{ 'customer.login_page.create_account' | t }}
       </a>
+
+      {%- if form.password_needed -%}
+      <a href="#recover" class="login-links forgot-password">
+          {{ 'customer.login_page.forgot_password' | t }}
+      </a>
+      {%- endif -%}     
     {%- endform -%}
   </div>
 

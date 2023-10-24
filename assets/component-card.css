@@ -150,7 +150,6 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
@@ -326,9 +325,9 @@
   width: 100%;
 }
 
-.card--standard > .card__content {
+/* .card--standard > .card__content {
   padding: 0;
-}
+} */
 
 /* .card--standard > .card__content .card__information {
   padding-left: 0;
@@ -369,7 +368,7 @@
 }
 
 .card-information > * + * {
-  margin-top: 0.5rem;
+  margin-top: 0rem;
 }
 
 .card-information {

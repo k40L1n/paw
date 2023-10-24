@@ -14,6 +14,23 @@
   }
 {%- endstyle -%}
 
+<div class="account-outer px-20 px-md-40">
+  <div class="account-details">
+    <h1 class="m-0">Welcome {{ customer.name }}</h1>
+    <p>Here you can keep track of your recent activity, requests return/exchange authorizations for orders you have received, and view and edit your account information or list of favorited items.</p>
+  </div>
+
+  <a href="{{ routes.account_logout_url }}">
+      {{ 'customer.log_out' | t }}
+  </a>
+</div>
+
+
+
+
+
+
+
 <div class="customer account section-{{ section.id }}-padding">
   <div>
     <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
@@ -149,6 +166,58 @@
     </div>
   </div>
 </div>
+
+<style>
+  .account-outer{
+    padding: 40px 0;
+  }
+  .account-outer a {
+    background-color: #000000;
+    border-radius: 1rem;
+    padding: 5px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .account-details h1 {
+    font-size: 8vw;
+    color: #da1313;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+  }
+  .account-details p {
+    max-width: 400px;
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  @media only screen and (min-width: 750px) {
+    .account-outer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .account-details h1 {
+      font-size: 6vw;
+    }
+    .account-details p {
+        max-width: 600px;
+    }
+    .account-outer a {
+      background-color: #000000;
+      border-radius: 1rem;
+      padding: 5px 20px;
+      color: #ffffff;
+      text-decoration: none;
+      display:unset;
+      width: auto;
+    }
+  }
+      
+</style>
 
 {% schema %}
 {

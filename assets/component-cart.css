@@ -23,9 +23,9 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__empty-text {
   margin: 4.5rem 0 2rem;
-  font-size: 3vw;
+  font-size: 10vw;
   font-weight: 900;
-  font-family: 'Anton',sans-serif;
+  font-family: "Anton", sans-serif;
   color: #da1313;
   letter-spacing: 1px;
 }
@@ -90,8 +90,6 @@ cart-items {
   height: fit-content;
   top: 2.5rem;
 }
-
-
 
 .cart__note label {
   display: flex;
@@ -175,7 +173,7 @@ cart-items {
   margin: 0 auto;
 }
 
-.cart__dynamic-checkout-buttons div[role='button'] {
+.cart__dynamic-checkout-buttons div[role="button"] {
   border-radius: var(--buttons-radius-outset) !important;
 }
 
