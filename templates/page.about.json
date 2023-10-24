@@ -1,0 +1,228 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8be25a4a-cd4c-4407-af2f-b528a5efbf7d": {
+      "type": "rich-text",
+      "blocks": {
+        "e50a3a9c-2c3a-4c8a-85fd-1d76a14d9c73": {
+          "type": "heading",
+          "settings": {
+            "heading": "FASHION THAT STANDS AGAINST ANIMAL <span>BLOOD</span>",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": ["e50a3a9c-2c3a-4c8a-85fd-1d76a14d9c73"],
+      "custom_css": [
+        "h1 {font-size: 10vw; color: #000000;}",
+        "h1 span {color: #da1313;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "221786a9-d2ad-4926-a56e-20cabceeba8b": {
+      "type": "image-banner",
+      "custom_css": [
+        ".banner__media {border-radius: 20px; border: 1px solid #000000;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about-us-banner.png",
+        "img_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "6120ee2c-0216-4b21-ba87-07dfaaa56137": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16202398072986__6120ee2c-0216-4b21-ba87-07dfaaa56137-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wear A Paw is a purpose led fashion brand where every print crafts a story of coexistence. Explore the world of Wear A Paw, where clothing transcends mere fabric.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16202398072986__6120ee2c-0216-4b21-ba87-07dfaaa56137-text-1"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.rich-text__text {max-width: 1070px; margin: 0 auto; font-size: 3.6rem; line-height: 1.3; letter-spacing: -1px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "87dd0dd4-93ae-4d02-a1df-79b5e257b9d5": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-1",
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-2",
+        "template--16202398072986__87dd0dd4-93ae-4d02-a1df-79b5e257b9d5-featured_collection-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5b3485be-93aa-4c97-980c-e72be1874f18": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16202398072986__5b3485be-93aa-4c97-980c-e72be1874f18-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>We refuse to turn a blind eye to the suffering and cruelty that often lurk behind every leather product.</strong>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16202398072986__5b3485be-93aa-4c97-980c-e72be1874f18-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>At Wear a Paw, we confront the stark reality of the leather industry with unyielding commitment. Countless animals endure lives of anguish, from cramped and unsanitary conditions to painful procedures, only to meet brutal ends. This industry's toll extends beyond animal suffering; it engulfs our environment in toxic tides, contributing to deforestation and pollution. By choosing Wear a Paw, you choose compassion over cruelty. Our brand stands as a beacon of change, offering fashion that not only adorns you but also adorns the world with kindness. Join us in our mission to create a world where every outfit signifies a voice for the voiceless, a world where fashion and empathy unite to rewrite the narrative of the leather industry, one step at a time.<br> </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16202398072986__5b3485be-93aa-4c97-980c-e72be1874f18-column-1",
+        "template--16202398072986__5b3485be-93aa-4c97-980c-e72be1874f18-column-2"
+      ],
+      "custom_css": [
+        ".inline-richtext {font-size: 4rem; line-height: 1.3;}",
+        ".multicolumn-card__info p {font-size: 2.4rem; line-height: 1.3;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5e884feb-4388-45d2-91cd-0cf0b86a12cb": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16202398072986__5e884feb-4388-45d2-91cd-0cf0b86a12cb-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16202398072986__5e884feb-4388-45d2-91cd-0cf0b86a12cb-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16202398072986__5e884feb-4388-45d2-91cd-0cf0b86a12cb-column-1",
+        "template--16202398072986__5e884feb-4388-45d2-91cd-0cf0b86a12cb-column-2"
+      ],
+      "custom_css": [
+        ".multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn .title {font-family: \"Anton\", sans-serif; width: 100%; text-align: center; font-size: 6vw;}",
+        ".media--adapt img {border: 1px solid #000000; border-radius: 20px;}"
+      ],
+      "settings": {
+        "title": "MEET THE TRAILBLAZERS",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8be25a4a-cd4c-4407-af2f-b528a5efbf7d",
+    "221786a9-d2ad-4926-a56e-20cabceeba8b",
+    "6120ee2c-0216-4b21-ba87-07dfaaa56137",
+    "87dd0dd4-93ae-4d02-a1df-79b5e257b9d5",
+    "5b3485be-93aa-4c97-980c-e72be1874f18",
+    "5e884feb-4388-45d2-91cd-0cf0b86a12cb"
+  ]
+}

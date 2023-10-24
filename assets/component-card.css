@@ -202,6 +202,9 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .card__heading:last-child {

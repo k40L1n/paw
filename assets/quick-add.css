@@ -1,6 +1,6 @@
 .quick-add {
   position: relative;
-  margin: -7rem auto 0 auto;
+  margin: -9rem auto 0 auto;
   z-index: 1;
   width: 90%;
   display: none;
@@ -221,7 +221,9 @@ quick-add-modal .product-form__buttons {
   min-width: 100%;
   box-sizing: border-box;
   border-radius: 10px;
+  letter-spacing: -1px;
   border: 1px solid #000000;
+  font-weight: 600;
 }
 
 quick-add-modal .product-media-container.constrain-height {

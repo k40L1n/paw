@@ -27,9 +27,11 @@
 }
 
 .heading-large {
-  font-size: 20vw;
+  font-size: 21vw;  
   font-family: "Anton", sans-serif;
-  color: #da1313;
+  color: #000000;
+  letter-spacing: -8px;
+  line-height: 1;
 }
 
 @media screen and (min-width: 750px) {
