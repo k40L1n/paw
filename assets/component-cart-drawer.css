@@ -41,6 +41,11 @@
   flex-direction: column;
 }
 
+.drawer__inner-empty a.button {
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
 .cart-drawer__warnings {
   display: flex;
   flex-direction: column;
