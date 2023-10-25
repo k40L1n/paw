@@ -7,7 +7,7 @@
   <div class="px-20 px-md-40">
     <div class="footer-info">
       <div class="footer-mission"> 
-      <p>Wear a paw is not just a clothing brand but a step towards speaking for the voiceless. Globally we are exploiting animals for fashion, food and entertainment. When you wear a paw you speak for a cause in each outfit as each print speaks for the animals and a cause. </p>
+      <p>Wear A Paw isn't just fashion; it's a purposeful statement. Our unique prints echo with distinctive voices, telling untold stories in the most creative and empathetic manner, making us a beacon of purpose-led style. </p>
       </div>
       <div class="footer-links footer-links-first">
         <h3>Shop</h3>
@@ -29,16 +29,19 @@
       </div>
     </div>
     <div class="footer-desc">
+
+      <div class="footer-desc-studio">
+        <span>designed by</span>
+        <span>Lolo Pipa Design Studio</span>
+      </div>
+
       <div class="footer-desc-social">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="footer-desc-studio">
-        <span>designed by</span>
-        <span>Lolo Pipa Design Studio</span>
-      </div>
+
     </div>
   </div>
 </footer>
@@ -63,8 +66,8 @@
   .footer-mission{
     color: #FDFDF3;
     justify-self: flex-start;
-    padding-right: 40px;
     grid-area: 1 / 1 / 1 /7;
+    max-width: 44rem;
   }
   .footer-links a{
     display: block;
@@ -83,6 +86,10 @@
   }
   .footer-links-third {
     grid-area:  2 / 5 / 2 / 7;
+  }
+
+  .footer-links-first, .footer-links-second, .footer-links-third{
+    text-align: center;
   }
   .footer-desc{
     display: grid;
@@ -130,6 +137,10 @@
      .footer-links-third {
       grid-area: unset;
      }
+
+     .footer-mission{
+      padding-right: 40px;
+    } 
   }
 </style>
 

@@ -23,14 +23,15 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__empty-text {
   margin: 4.5rem 0 2rem;
-  font-size: 10rem;
-  font-weight: 600;
+  font-size: 12rem;
+  font-weight: 400;
   font-family: "Anton", sans-serif;
   color: #da1313;
-  letter-spacing: 1px;
-  margin: 3rem 0 3rem 2rem;
+  letter-spacing: 0;
+  margin: 3rem 0;
   text-align: left;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .cart__contents > * + * {
@@ -45,6 +46,7 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__login-paragraph {
   margin-top: 0.8rem;
+  color: #000000;
 }
 
 .cart__login-paragraph a {
