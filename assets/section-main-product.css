@@ -397,6 +397,7 @@ a.product__text {
 .product__title h1 {
   font-size: 12vw;
   margin-top: 4rem;
+  line-height: 1.1;
 }
 
 .product__description {

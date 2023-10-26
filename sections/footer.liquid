@@ -10,7 +10,7 @@
       <p>Wear A Paw isn't just fashion; it's a purposeful statement. Our unique prints echo with distinctive voices, telling untold stories in the most creative and empathetic manner, making us a beacon of purpose-led style. </p>
       </div>
       <div class="footer-links footer-links-first">
-        <h3>Shop</h3>
+        <h3>Company</h3>
         {% for link in section.settings.menu1.links %}
           <a href="{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
@@ -21,27 +21,50 @@
           <a href="{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
       </div>
-      <div class="footer-links footer-links-third">
-        <h3>Help & Contact</h3>
-        {% for link in section.settings.menu3.links %}
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        {% endfor %}
-      </div>
     </div>
     <div class="footer-desc">
 
       <div class="footer-desc-studio">
         <span>designed by</span>
-        <span>Lolo Pipa Design Studio</span>
+        <span>
+          Lolo Pipa Design Studio
+        </span>
       </div>
 
       <div class="footer-desc-social">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      {%- if settings.social_instagram_link != blank -%}
+          <span>     
+            <a href="{{ settings.social_instagram_link }}">
+              {%- render 'icon-instagram' -%}
+              <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+            </a>
+          </span>
+        {%- endif -%}
+        {%- if settings.social_facebook_link != blank -%}
+          <span>     
+            <a href="{{ settings.social_facebook_link }}">
+              {%- render 'icon-facebook' -%}
+              <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+            </a>
+          </span>
+        {%- endif -%}
+        {%- if settings.social_youtube_link != blank -%}
+          <span>     
+            <a href="{{ settings.social_youtube_link  }}">
+              {%- render 'icon-youtube' -%}
+              <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+            </a>
+          </span>
+        {%- endif -%}
+        {%- if settings.social_twitter_link != blank -%}
+          <span>     
+            <a href="{{ settings.social_twitter_link }}">
+              {%- render 'icon-twitter' -%}
+              <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+            </a>
+          </span>
+        {%- endif -%}
       </div>
-
     </div>
   </div>
 </footer>
@@ -66,8 +89,7 @@
   .footer-mission{
     color: #FDFDF3;
     justify-self: flex-start;
-    grid-area: 1 / 1 / 1 /7;
-    max-width: 44rem;
+    grid-area: 1 / 1 / 1 / 7;
   }
   .footer-links a{
     display: block;
@@ -79,18 +101,17 @@
    letter-spacing: -1px;
   }
   .footer-links-first {
-    grid-area:  2 / 1 / 2 / 3;
+    grid-area:  2 / 1 / 2 / 4;
   }
   .footer-links-second {
-    grid-area:  2 / 3 / 2 / 5;
-  }
-  .footer-links-third {
-    grid-area:  2 / 5 / 2 / 7;
+    grid-area:  2 / 4 / 2 / 7;
   }
 
-  .footer-links-first, .footer-links-second, .footer-links-third{
+  .footer-links-first, .footer-links-second{
     text-align: center;
+    margin-right: 0;
   }
+  
   .footer-desc{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -106,9 +127,12 @@
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #FDFDF3;
-    margin: 0 10px;
   }
+
+   .footer-desc-social span a {
+    color: #fdfdf3;
+   }
+
   .footer-desc-studio {
     text-align: center;
   }
@@ -117,30 +141,37 @@
     display: block;
     letter-spacing: -1px;
     font-weight: 600;
+    line-height: 1.3;
   }
 
   @media screen and (min-width: 750px) {
     .footer-info{  
       display: grid;
-      grid-template-columns: 3fr 1fr 1fr 1fr;
+      grid-template-columns: 5fr 1fr 1fr;
       text-align: left;
     }
     .footer-desc{
-      grid-template-columns: 5fr 1fr;
+      grid-template-columns: 6fr 1fr;
     }
+
     .footer-desc-studio {
       text-align: left;
     }
      .footer-mission, 
      .footer-links-first, 
-     .footer-links-second, 
-     .footer-links-third {
+     .footer-links-second {
       grid-area: unset;
      }
 
      .footer-mission{
       padding-right: 40px;
+      max-width: 44rem;
     } 
+
+    .footer-links-first, .footer-links-second{
+      text-align: left;
+      margin-right: 10rem;
+    }
   }
 </style>
 
@@ -158,12 +189,6 @@
       "type": "link_list",
       "id": "menu2",
       "label": "Select Footer Menu 2",
-      "info": "Displays the menu items assigned"
-    },
-    {
-      "type": "link_list",
-      "id": "menu3",
-      "label": "Select Footer Menu 3",
       "info": "Displays the menu items assigned"
     }
   ]
