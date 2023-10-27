@@ -32,7 +32,7 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-weight: 600;
 }
 

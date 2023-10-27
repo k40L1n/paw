@@ -27,7 +27,7 @@
 }
 
 .heading-large {
-  font-size: 21vw;  
+  font-size: 21vw;
   font-family: "Anton", sans-serif;
   color: #000000;
   letter-spacing: -8px;
@@ -51,7 +51,7 @@
   .heading-rich-text[data-attr="11"] h1::after {
     display: block;
     content: "";
-    background-image: url('https://cdn.shopify.com/s/files/1/0812/9403/3178/files/hidden_pains.png?v=1698059619');
+    background-image: url("https://cdn.shopify.com/s/files/1/0812/9403/3178/files/hidden_pains.png?v=1698059619");
     height: 85%;
     width: 15%;
     position: absolute;
@@ -59,31 +59,22 @@
     right: 23%;
     background-repeat: no-repeat;
     background-size: contain;
+  }
 }
-  }
 
-  .rich-text__wrapper {
-    width: 100%;
-  }
+.rich-text__wrapper {
+  width: 100%;
+}
 
-  .rich-text__wrapper--left {
-    justify-content: flex-start;
-  }
+.rich-text__wrapper--left {
+  justify-content: flex-start;
+}
 
-  .rich-text__wrapper--right {
-    justify-content: flex-end;
-  }
+.rich-text__wrapper--right {
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 990px) {
-  .heading-large {
-    font-size: 21vw;  
-    font-family: "Anton", sans-serif;
-    color: #000000;
-    letter-spacing: -8px;
-    line-height: 1;
-  }
-  
   .rich-text__blocks {
     max-width: 100%;
   }
