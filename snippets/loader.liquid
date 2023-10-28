@@ -30,7 +30,7 @@ div.bar:empty, p:empty {
 .bar {
 	width: 10vw;
 	height: 100vh;
-	background-color: #000000;
+	background-color: transparent;
 }
 .counter {
 	position: absolute;
@@ -118,7 +118,7 @@ gsap.to(".overlay", 1.5, {
 	display: "none"
 });
 
-gsap.to(".message", 0.25, {
+gsap.to(".message", 1, {
 	delay: 1.5,
 	display: "none"
 });
